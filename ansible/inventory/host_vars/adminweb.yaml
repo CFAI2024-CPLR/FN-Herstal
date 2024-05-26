@@ -1,0 +1,11 @@
+host: fnherstal-terraform.adminweb.cfai24.ajformation.fr
+login: root
+
+src: /home/projet/ansible/adminweb/
+dest: /var/www/html/
+
+delegate_to: adminweb
+
+packages:
+  - sudo
+  - apache2

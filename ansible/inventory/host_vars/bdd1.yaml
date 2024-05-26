@@ -1,0 +1,17 @@
+host: fnherstal-terraform.bdd.cfai24.ajformation.fr
+login: root
+
+packages:
+  - sudo
+  - python3-pymysql
+  - mariadb-server
+  - python3-pip
+  - python3-dev
+  - libmysqlclient-dev
+  
+
+
+mariadb_root_password: "fn12hs3."
+mariadb_database: "fn_bdd"
+mariadb_user: "fn"
+mariadb_password: "fn"

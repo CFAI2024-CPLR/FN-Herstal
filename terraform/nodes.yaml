@@ -1,0 +1,22 @@
+ssh_public_keys: |
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCoWtU6emsO2dgGFK+gJJchA+rvO9hzvffe6nEj1HDo9IwfCBMO59KaCMOWbjeQx6S10X/vTRxNWiLfhuPlRSXwdAXK6/bzpWGecpQnxNn6Df6qaYhb/WMt9nb7AnghRnljTEFoPP+aMr1vr> 
+ 
+target_node: cfai2024
+pool: mfleuret
+
+containers:
+  - name: fnherstal.vitrineweb
+    cpuunits: 128
+    memory: 128
+    rootfs_size: 2G
+    ipv6: 2a03:5840:111:1024:b121:13ff:feea:0001/64
+  - name: fnherstal.adminweb
+    cpuunits: 128
+    memory: 128
+    rootfs_size: 2G
+    ipv6: 2a03:5840:111:1024:b121:13ff:feea:0002/64
+  - name: fnherstal.bdd
+    cpuunits: 128
+    memory: 128
+    rootfs_size: 2G
+    ipv6:  2a03:5840:111:1024:b121:13ff:feea:0003/64

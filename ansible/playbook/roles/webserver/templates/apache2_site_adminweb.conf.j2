@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html/adminweb
+
+    <Directory /var/www/html/adminweb>
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/adminweb.log
+    CustomLog ${APACHE_LOG_DIR}/adminweb.log combined
+</VirtualHost>

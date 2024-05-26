@@ -1,0 +1,13 @@
+fn:
+   vars:
+    ansible_host: "{{ host }}"
+    ansible_user: "{{ login }}"
+   children:
+    webservers:
+      hosts:
+        adminweb:
+        vitrineweb:
+    db_servers:
+      hosts:
+        bdd1:
+

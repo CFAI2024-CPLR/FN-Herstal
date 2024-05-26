@@ -1,0 +1,9 @@
+sites:
+  site1:
+    repo_url: 'https://github.com/MatteoCharrin/FN-Herstal-Site-Vitrine'
+    site_name: 'sitevitrine'
+    apache_conf_template: 'apache2_sitevitrine.conf.j2'
+  site2:
+    repo_url: 'https://github.com/MatteoCharrin/FN-Herstal-Site-Admin'
+    site_name: 'adminweb'
+    apache_conf_template: 'apache2_adminweb.conf.j2'

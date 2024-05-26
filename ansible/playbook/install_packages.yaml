@@ -1,0 +1,14 @@
+- hosts: fn
+  become: true
+  tasks:
+    - name: Install packages (Debian)
+      ansible.builtin.apt:
+        name: "{{ packages }}"
+        state: present
+      when: ansible_os_family == "Debian"
+
+    - name: Install packages (RedHat)
+      ansible.builtin.dnf:
+        name: "{{ packages }}"
+        state: latest
+      when: ansible_os_family == "RedHat"

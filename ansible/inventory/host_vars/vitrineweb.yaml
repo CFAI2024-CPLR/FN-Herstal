@@ -1,0 +1,10 @@
+host: fnherstal-terraform.vitrineweb.cfai24.ajformation.fr
+login: root
+
+delegate_to: vitrineweb
+src: /home/projet/ansible/vitrineweb/
+dest: /var/www/html/
+
+packages:
+  - sudo
+  - apache2
