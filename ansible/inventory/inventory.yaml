@@ -5,9 +5,9 @@ fn:
    children:
     webservers:
       hosts:
-        adminweb:
-        vitrineweb:
+        fnherstal.adminweb:
+        fnherstal.vitrineweb:
     db_servers:
       hosts:
-        bdd1:
+        fnherstal.bdd:
 
