@@ -5,7 +5,11 @@ resource "proxmox_lxc" "basic" {
   target_node  = "cfai2024"
   hostname     = each.value.name
   ostemplate   = "local:vztmpl/debian-12-standard_12.2-1_amd64.tar.zst"
-  password     = var.password
+#  ssh_public_keys = <<-EOT
+#    ${var.ssh_public_keys}
+#  EOT
+  ssh_public_keys = var.ssh_public_keys
+#  password     = var.password
 #  unprivileged = true
   pool = "mfleuret"
   cpuunits = each.value.cpuunits

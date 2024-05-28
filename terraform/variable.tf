@@ -29,7 +29,7 @@ variable containers {
     cpuunits    = number
     rootfs_size = string
     memory      = number
-    
+    class	= string
     ipv6        = string
     
   }))
@@ -40,6 +40,7 @@ variable containers {
     memory      = 128
     ostemplate  = "local:vztmpl/debian-12-standard_12.2-1_amd64.tar.zst"
     ipv6        = "2a03:5840:111:1024:b121:13ff:feea:1000"
+    class	= "websites"
   }]
   description   = ""
 
