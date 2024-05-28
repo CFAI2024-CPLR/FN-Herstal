@@ -1,6 +1,6 @@
 ssh_public_keys: |
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCoWtU6emsO2dgGFK+gJJchA+rvO9hzvffe6nEj1HDo9IwfCBMO59KaCMOWbjeQx6S10X/vTRxNWiLfhuPlRSXwdAXK6/bzpWGecpQnxNn6Df6qaYhb/WMt9nb7AnghRnljTEFoPP+aMr1vr> 
- 
+  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCoWtU6emsO2dgGFK+gJJchA+rvO9hzvffe6nEj1HDo9IwfCBMO59KaCMOWbjeQx6S10X/vTRxNWiLfhuPlRSXwdAXK6/bzpWGecpQnxNn6Df6qaYhb/WMt9nb7AnghRnljTEFoPP+aMr1vr> 
+  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC+DEGAW0CwYbHmaOq/DLsEBNTYp8qd3AvP2t+cjHikby5kwX2CHg7nyiImkmDqd3fglfW2USv97I+Mo19inxjOP/0mtkIe3PRo99OnTYcxSAW5LASgwC7AyYXLvHIFrQ2M/34gpZB/qc5RSoeRdiGF2KcMFvbGeGsThPFT8Eel01C/1/Z6kwsbZVOS9nZ2rN2j9FLOcpUpmJyr1SQKvC8l2rhpbX1RkdrIw0Fnb3AGKrPv38yJcTgHZz2IWSdO1/PDSe8X5+KAxbdCCCSaot2nVqrAaZzEiwhQySRnwu3FH1RpM3DGTtg21IyQS8b0i9czJkO2jEdgGQbK9IfjPUMX jerome@djay
 target_node: cfai2024
 pool: mfleuret
 
@@ -10,13 +10,16 @@ containers:
     memory: 128
     rootfs_size: 2G
     ipv6: 2a03:5840:111:1024:b121:13ff:feea:0001/64
+    class: websites
   - name: fnherstal.adminweb
     cpuunits: 128
     memory: 128
     rootfs_size: 2G
     ipv6: 2a03:5840:111:1024:b121:13ff:feea:0002/64
+    class: websites
   - name: fnherstal.bdd
     cpuunits: 128
     memory: 128
     rootfs_size: 2G
     ipv6:  2a03:5840:111:1024:b121:13ff:feea:0003/64
+    class: bdd
